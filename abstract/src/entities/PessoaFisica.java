@@ -14,7 +14,7 @@ public class PessoaFisica extends Pessoa {
 	}
 
 	@Override
-	public Double calculaImposto() {
+	public double calculaImposto() {
 
 		double imposto = getRendaAnual() < 20000 ? getRendaAnual() * 0.15 : getRendaAnual() * 0.25;		
 		

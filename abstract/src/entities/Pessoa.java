@@ -22,5 +22,12 @@ public abstract class Pessoa {
 		return rendaAnual;
 	}
 	
-	public abstract Double calculaImposto();	
+	public abstract double calculaImposto();
+	
+	@Override
+	public String toString() {
+		return nome
+				+ ": $ "
+				+ String.format("%.2f", calculaImposto());
+	}
 }
