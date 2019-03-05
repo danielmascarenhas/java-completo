@@ -4,6 +4,15 @@ public class PessoaFisica extends Pessoa {
 
 	private Double gastosComSaude;
 	
+	public PessoaFisica() {
+		super();
+	}
+	
+	public PessoaFisica(String nome, Double rendaAnual, Double gastosComSaude) {
+		super(nome, rendaAnual);
+		this.gastosComSaude = gastosComSaude;
+	}
+
 	@Override
 	public Double calculaImposto() {
 
