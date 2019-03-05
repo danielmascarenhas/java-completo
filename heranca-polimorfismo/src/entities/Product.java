@@ -14,8 +14,18 @@ public class Product {
 		this.price = price;
 	}
 	
+	public String getName() {
+		return name;
+	}
+	
+	public Double getPrice() {
+		return price;
+	}
+	
 	public String priceTag() {
-		return name + " $ " + String.format("%.2f", price);
+		return name
+				+ " $ "
+				+ String.format("%.2f", price);
 	}	
 
 }
